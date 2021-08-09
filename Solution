@@ -1,0 +1,23 @@
+ class Solution {
+    public boolean rotateString(String s, String goal) {
+         
+        // In this problem we will be using KMP algorithm....
+        //First we will take a String which will store the submission os s
+        // Now this String will contains all the possible rotations possible
+        
+        String sum = s+ s;
+        
+        // Now we will check the length of s and goal if length are not equal we will return    // false
+        
+        if(s.length() == goal.length()){
+            // Now we just have to check goal is substring of sum or not
+            return sum.contains(goal);
+            
+        }
+        else {
+            return false;
+        }
+        
+        
+    }
+}
