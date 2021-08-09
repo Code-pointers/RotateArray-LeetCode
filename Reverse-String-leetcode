@@ -1,0 +1,28 @@
+class Solution {
+    public void reverseString(char[] s) {
+        
+        // Source code in the description........
+        
+       // In this question we will reverse the array in best time complexity
+       
+          // We will solve this problem by taking two pointers 
+         // Start will point to the first element
+        // end will point to the last element of the array
+        
+        int start = 0;
+        int end = s.length - 1;
+        
+        // Now we will swap the start element with the and and we will perform this task
+        // until start < end
+        
+        while(start < end){
+            char temp = s[end];
+            s[end] = s[start];
+            s[start] = temp;
+            
+            start++;
+            end--;
+        }
+      
+    }
+}
